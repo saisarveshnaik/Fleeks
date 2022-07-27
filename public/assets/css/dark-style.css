@@ -1,0 +1,131 @@
+#dark{
+	background: #000000;
+}
+
+#dark .LE{          /* REPRESENT A LIGHT THEME ELEMENT THAT WILL HIDE IN DARK THEME */
+	display: none;
+}
+
+#dark .navbar{
+    background: #0a0f18;
+    padding: 1.2vw 9.5vw 1.2vw 9.5vw;
+    position: relative;
+    z-index: 9999;
+   }
+   
+#dark .navbar .navbar-brand img{
+       width: 6.8vw;
+       margin-right: 2vw;
+   }
+
+#dark .navbar .nav-item .nav-link{
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 1.2vw;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    padding-top: 0.5vw;
+    color: #81889B;
+}   
+
+#dark .navbar .nav-item .nav-link img{
+	width: 0.4vw;
+	margin-left: 0.4vw;
+}
+
+#dark .navbar .nav-item .blue-text{
+	color: #0082FF;
+}
+
+#dark .navbar .nav-item .rainbow-text{
+	background: linear-gradient(90deg, #0194EC 0%, #36FF86 101.83%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+#dark .navbar .connect-btn{
+    background: #080A0B;
+    border-radius: 40px;
+    border: 3px solid #02a3d6;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    color: #FFFFFF;
+    padding: 0.8vw 2vw 0.7vw 2vw;
+    text-align: center;
+    /* margin-left: 1.5vw;
+    margin-right: 1.5vw; */
+    }
+
+#dark .navbar .search-btn{
+        border-radius: 50%;
+        background: #080A0B;
+        border: 3px solid #1A2028;
+        width: 3.5vw;
+        height: 3.5vw;
+        text-align: center;
+     }
+
+
+#dark .navbar .search-btn img{
+        width: 1.2vw;
+    }     
+
+#dark .navbar .checkbox {
+        opacity: 0;
+        position: absolute;
+      }  
+
+#dark .navbar .label {
+        width: 2vw;
+        height: 1vw;
+        background-color:#81889B;
+        display: flex;
+        border-radius:50px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.2vw;
+        position: relative;
+        transform: scale(1.5);
+        margin-right: 2vw;
+        cursor: pointer;
+      }
+
+#dark .navbar .ball {
+        width: 0.8vw;
+        height: 0.8vw;
+        background-color: #1a2028;
+        position: absolute;
+        top: 0.1vw;
+        left: 0.1vw;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+      }
+ 
+  /*  target the elemenent after the label*/
+#dark .navbar .checkbox:checked + .label .ball{
+	transform: translateX(1vw);
+  }
+  
+#dark .navbar  .fa-moon-o{
+	color: white;
+	font-size: 0.7vw !important;
+	margin-right: 0.3vw;
+  }
+  
+#dark .navbar  .fa-sun-o{
+	color: yellow;
+	font-size: 0.7vw !important;
+	
+  }      
+      
+  #dark .navbar .line{
+	width: 100%;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+  }
